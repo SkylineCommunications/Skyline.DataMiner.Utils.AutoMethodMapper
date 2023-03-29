@@ -5,8 +5,8 @@
 		<Nullable>disable</Nullable>
 		<AssemblyName>Skyline.DataMiner.Utils.AutoMethodMapper</AssemblyName>
 		<PackageVersion>1.0.1</PackageVersion>
-		<Version>1.0.1</Version>
-		<PackageTags>Skyline;DataMiner</PackageTags>
+		<Version>1.0.2</Version>
+		<PackageTags>Skyline;DataMiner;auto;method;map</PackageTags>
 		<PackageProjectUrl>https://skyline.be</PackageProjectUrl>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
