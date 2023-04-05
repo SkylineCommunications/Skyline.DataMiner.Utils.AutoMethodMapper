@@ -18,9 +18,9 @@
 		<RepositoryType>git</RepositoryType>
 		<RepositoryUrl>https://github.com/SkylineCommunications/Skyline.DataMiner.Utils.AutoMethodMapper.git</RepositoryUrl>
 		<AssemblyVersion>1.0.2</AssemblyVersion>
-		<PackageVersion>$(AssemblyVersion)-alpha01</PackageVersion>
+		<PackageVersion>$(Version)</PackageVersion>
 		<FileVersion>$(AssemblyVersion)</FileVersion>
-		<Version>$(AssemblyVersion)-alpha01</Version>
+		<Version>$(AssemblyVersion)</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
