@@ -4,8 +4,6 @@
 		<ImplicitUsings>disable</ImplicitUsings>
 		<Nullable>disable</Nullable>
 		<AssemblyName>Skyline.DataMiner.Utils.AutoMethodMapper</AssemblyName>
-		<PackageVersion>1.0.1</PackageVersion>
-		<Version>1.0.2</Version>
 		<PackageTags>Skyline;DataMiner;auto;method;map</PackageTags>
 		<PackageProjectUrl>https://skyline.be</PackageProjectUrl>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
@@ -19,6 +17,10 @@
 		<Description>Automaticly create a mapping between methods based and an attribute on top of the method.</Description>
 		<RepositoryType>git</RepositoryType>
 		<RepositoryUrl>https://github.com/SkylineCommunications/Skyline.DataMiner.Utils.AutoMethodMapper.git</RepositoryUrl>
+		<AssemblyVersion>1.0.2</AssemblyVersion>
+		<PackageVersion>$(AssemblyVersion)-alpha01</PackageVersion>
+		<FileVersion>$(AssemblyVersion)</FileVersion>
+		<Version>$(AssemblyVersion)-alpha01</Version>
 	</PropertyGroup>
 
 	<ItemGroup>

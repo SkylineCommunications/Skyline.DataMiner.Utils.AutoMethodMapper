@@ -42,7 +42,7 @@
         /// This method will retrieve all methods with a given <see cref="Attribute"/> of the current object.
         /// </summary>
         /// <returns>A Dictionary with the <see cref="Attribute"/> as key and the <see cref="MethodInfo"/> as value.</returns>
-        /// <exception cref="DuplicateTriggersException"></exception>
+        /// <exception cref="DuplicateTriggersException">Exception when multiple methods are found for a trigger.</exception>
         protected Dictionary<Attribute, MethodInfo> GenerateFunctionMapping()
         {
             return this.GenerateFunctionMapping(this.AttributeType);
@@ -53,7 +53,7 @@
         /// </summary>
         /// <param name="attributeType">The type of the custom Attribute used in the child class.</param>
         /// <returns>A Dictionary with the <see cref="Attribute"/> as key and the <see cref="MethodInfo"/> as value.</returns>
-        /// <exception cref="DuplicateTriggersException"></exception>
+        /// <exception cref="DuplicateTriggersException">Exception when multiple methods are found for a trigger.</exception>
         protected Dictionary<Attribute, MethodInfo> GenerateFunctionMapping(Type attributeType)
         {
             // Get all the methods with a MapperAttribute
