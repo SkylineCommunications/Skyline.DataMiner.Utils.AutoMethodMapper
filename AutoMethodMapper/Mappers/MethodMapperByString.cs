@@ -55,7 +55,7 @@
             }
             catch (Exception ex)
             {
-                throw new TriggerNotSupportedException(trigger);
+                throw new TriggerNotSupportedException($"The trigger with id: {trigger}, is not supported.", ex);
             }
         }
     }
