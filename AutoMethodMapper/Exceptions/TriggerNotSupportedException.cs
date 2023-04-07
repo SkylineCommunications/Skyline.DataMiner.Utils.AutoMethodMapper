@@ -47,6 +47,13 @@
         public TriggerNotSupportedException(string message, Exception innerException) : base(message, innerException) { }
 
         /// <summary>
+        /// Initializes a new instance of the <see cref="TriggerNotSupportedException"/> class with a specified message and inner exception.
+        /// </summary>
+        /// <param name="trigger">The ID of the unsupported trigger.</param>
+        /// <param name="innerException">The inner exception that caused this exception to be thrown.</param>
+        public TriggerNotSupportedException(int trigger, Exception innerException) : base($"The trigger with id: {trigger}, is not supported.", innerException) { }
+
+        /// <summary>
         /// Initializes a new instance of the <see cref="TriggerNotSupportedException"/> class with a specified message and inner exception that includes the unsupported trigger's ID.
         /// </summary>
         /// <param name="message">The message that describes the error.</param>

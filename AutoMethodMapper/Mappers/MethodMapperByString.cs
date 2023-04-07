@@ -19,14 +19,19 @@
         public MethodMapperByString() : base(typeof(MapperStringAttribute)) { }
 
         /// <summary>
+        /// Initializes a new instance of the <see cref="MapperStringAttribute"/> class.
+        /// This class will generate a dictionary with all the method with an Attribute <see cref="MapperStringAttribute"/> attached to it.
+        /// </summary>
+        /// <param name="triggerId">The id of the parameter that triggered this object.</param>
+        public MethodMapperByString(string triggerId) : base(typeof(MapperStringAttribute))
+        {
+            this.TriggerId = triggerId;
+        }
+
+        /// <summary>
         /// Gets or Sets the id of the parameter that triggered the QAction.
         /// </summary>
         public string TriggerId { get; protected set; }
-
-        /// <summary>
-        /// Gets the Dictionary that has the mappings of all the functions with an <see cref="MapperStringAttribute"/> and the given function.
-        /// </summary>
-        protected Dictionary<string, MethodInfo> Actions { get; }
 
         /// <summary>
         /// This will search for the right method to invoke based on the given TriggerId.

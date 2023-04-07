@@ -19,14 +19,19 @@
         public MethodMapperByInt() : base(typeof(MapperIntAttribute)) { }
 
         /// <summary>
+        /// Initializes a new instance of the <see cref="MethodMapperByInt"/> class.
+        /// This class will generate a dictionary with all the method with an Attribute <see cref="MapperIntAttribute"/> attached to it.
+        /// </summary>
+        /// <param name="triggerId">The id of the parameter that triggered this object.</param>
+        public MethodMapperByInt(int triggerId) : base(typeof(MapperIntAttribute))
+        {
+            this.TriggerId = triggerId;
+        }
+
+        /// <summary>
         /// Gets or Sets the id of the parameter that triggered the QAction.
         /// </summary>
         public int TriggerId { get; protected set; }
-
-        /// <summary>
-        /// Gets the Dictionary that has the mappings of all the functions with an <see cref="MapperIntAttribute"/> and the given function.
-        /// </summary>
-        protected Dictionary<int, MethodInfo> Actions { get; }
 
         /// <summary>
         /// This will search for the right method to invoke based on the given TriggerId.
